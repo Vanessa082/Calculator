@@ -1,11 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>calculator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/style/style.css">
+  <title>scientific-calculator</title>
 </head>
+
 <body>
-    
+  <div class="calculator">
+    <div class="border">
+      <div class="display">
+        <div class="theme-switcher">
+          <h1>MathQuick</h1>
+          <div class="theme">
+            <span>Mode</span>
+            <select id="theme-select">
+              <option value="light">Light</option>
+              <option value="dark">Dark</option>
+            </select>
+          </div>
+        </div>
+
+        <input type="text" placeholder="0" id="calc-display" readonly>
+      </div>
+
+      <div class="keypad">
+        <div class="row">
+          <button>7</button>
+          <button>8</button>
+          <button>9</button>
+          <button>/</button>
+          <button>&larr;</button>
+          <button>C</button>
+        </div>
+
+        <div class="row">
+          <button>4</button>
+          <button>5</button>
+          <button>6</button>
+          <button>*</button>
+          <button>%</button>
+          <button>()</button>
+
+        </div>
+
+        <div class="row">
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>-</button>
+          <button>+/-</button>
+          <button>e</button>
+        </div>
+
+        <div class="row">
+          <button>0</button>
+          <button>.</button>
+          <button>+</button>
+          <button>√ </button>
+          <button id="equal">=</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>

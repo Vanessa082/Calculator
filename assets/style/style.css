@@ -1,0 +1,148 @@
+body {
+  background-image: url("../images/pexels-karolina-grabowska-5412461.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 4rem;
+}
+
+.calculator {
+  align-items: center;
+  background-color: #fff;
+  width: 27%;
+  margin: 0 auto;
+  padding: 2rem;
+  border: groove;
+  border-radius: 2rem;
+  background-image: url("../images/pexels-karolina-grabowska-5412461.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.border {
+  border: groove;
+  background-color: #f8f8ff;
+  border-radius: 2rem;
+}
+
+.display {
+  background-color: #f8f8ff;
+  border-radius: 2rem;
+  padding: 2rem;
+}
+
+.theme-switcher {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#calc-display {
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: right;
+  font-size: 3rem;
+  color: #d3d3d3;
+  border-radius: 0.8rem groove #f8f8f8;
+  padding: 1rem;
+}
+
+.keypad {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem 2rem;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.row button {
+  font-size: 1.7rem;
+  background-color: #d3d3d3;
+  border-radius: 1rem;
+  padding: 0.6rem;
+  border: 1px groove;
+  text-align: center;
+}
+
+#equal {
+  background-image: url("../images/pexels-karolina-grabowska-5412461.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 2rem;
+  width: 6vw;
+  border-radius: 1rem;
+}
+
+.theme {
+  display: flex;
+  gap: 4px;
+  padding: 5px;
+  background-image: url("../images/pexels-karolina-grabowska-5412461.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 1rem;
+}
+
+select {
+  background-color: #d3d3d3;
+  border: none;
+}
+
+/* Add media query for responsiveness */
+@media only screen and (min-width: 768px) {
+  .calculator {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .keypad {
+    padding-bottom: 1.7rem;
+  }
+
+  #calc-display {
+    font-size: 2.5rem;
+  }
+
+  .row button {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .calculator {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 1rem;
+  }
+
+  #calc-display {
+    font-size: 2rem;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+  }
+
+  .row button {
+    font-size: 1.3rem;
+    padding: 0.3rem;
+    border-radius: 0.7rem;
+    margin: 0.2rem;
+  }
+
+  #equal {
+    width: 12vw;
+  }
+}
